@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Thank You for finishing the survey!</h1>
+
+    <h2>Here are your answers:</h2>
+    <ul>
+        {% for response in session["answers"] %}
+            <li>{{ response }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
